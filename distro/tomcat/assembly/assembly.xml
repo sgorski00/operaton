@@ -52,7 +52,9 @@
         <include>org.apache.groovy:groovy-dateutil:jar:*</include>
         <include>org.apache.groovy:groovy-datetime:jar:*</include>
 
-        <include>org.graalvm.js:*</include>
+        <include>org.graalvm.polyglot:polyglot:jar:*</include>
+        <include>org.graalvm.polyglot:js:pom:*</include>
+        <include>org.graalvm.js:js-scriptengine:jar:*</include>
         <include>org.graalvm.regex:regex:jar:*</include>
         <include>org.graalvm.truffle:truffle-api:jar:*</include>
         <include>org.graalvm.sdk:graal-sdk:jar:*</include>

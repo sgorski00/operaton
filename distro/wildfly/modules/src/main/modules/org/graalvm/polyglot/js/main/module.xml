@@ -1,17 +1,18 @@
-<module xmlns="urn:jboss:module:1.0" name="org.graalvm.js.js-scriptengine">
+<module xmlns="urn:jboss:module:1.0" name="org.graalvm.polyglot.js">
   <resources>
-    <resource-root path="js-scriptengine-@version.graal.js@.jar" />
+    <resource-root path="js-@version.graal.js@.jar" />
   </resources>
 
   <dependencies>
     <module name="java.base" />
-    <module name="java.scripting" />
+    <module name="java.management" />
+    <module name="jdk.unsupported" />
     <module name="sun.jdk" />
     <module name="org.operaton.spin.operaton-spin-core" />
-    <module name="org.graalvm.polyglot.js" services="export" export="true" />
+    <module name="org.graalvm.polyglot.polyglot" services="export" export="true" />
     <module name="org.graalvm.regex.regex" services="export" export="true" />
     <module name="org.graalvm.truffle.truffle-api" services="export" export="true" />
     <module name="org.graalvm.sdk.graal-sdk" services="export" export="true" />
-    <module name="com.ibm.icu.icu4j" export="true" />
+    <module name="com.ibm.icu.icu4j" />
   </dependencies>
 </module>

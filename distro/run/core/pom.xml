@@ -69,8 +69,13 @@
     </dependency>
     <!-- Graal.js -->
     <dependency>
-      <groupId>org.graalvm.js</groupId>
+      <groupId>org.graalvm.polyglot</groupId>
+      <artifactId>polyglot</artifactId>
+    </dependency>
+    <dependency>
+      <groupId>org.graalvm.polyglot</groupId>
       <artifactId>js</artifactId>
+      <type>pom</type>
     </dependency>
     <dependency>
       <groupId>org.graalvm.js</groupId>
